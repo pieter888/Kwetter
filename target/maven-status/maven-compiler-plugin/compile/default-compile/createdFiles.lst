@@ -1,0 +1,11 @@
+com\mycompany\kwetter\Dao\TweetService.class
+com\mycompany\kwetter\JAXRSConfiguration.class
+com\mycompany\kwetter\model\Tweet_.class
+com\mycompany\kwetter\Dao\TweetDAO.class
+com\mycompany\kwetter\model\User.class
+com\mycompany\kwetter\Dao\UserDAO.class
+com\mycompany\kwetter\model\Tweet.class
+com\mycompany\kwetter\model\User_.class
+com\mycompany\kwetter\Dao\UserService.class
+com\mycompany\kwetter\boundary\TweetResource.class
+com\mycompany\kwetter\model\test.class
