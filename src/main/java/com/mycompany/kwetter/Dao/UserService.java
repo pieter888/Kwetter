@@ -8,12 +8,14 @@ package com.mycompany.kwetter.Dao;
 import com.mycompany.kwetter.model.User;
 //import java.security.Principal;
 import java.util.List;
+import javax.ejb.Stateless;
 import javax.inject.Inject;
 
 /**
  *
  * @author Pieter
  */
+@Stateless
 public class UserService
 {
     @Inject

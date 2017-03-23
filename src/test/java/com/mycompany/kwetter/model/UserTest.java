@@ -5,7 +5,12 @@
  */
 package com.mycompany.kwetter.model;
 
+import com.mycompany.kwetter.Dao.UserDAO;
+import com.mycompany.kwetter.Dao.UserService;
+import java.security.Principal;
 import java.util.List;
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -20,18 +25,26 @@ import static org.junit.Assert.*;
 public class UserTest
 {
     
-    public UserTest()
-    {
-    }
+   
     
+    UserDAO dao;
+
+    Principal userPrincipal;
+
+    UserService us;
+
+    User u1;
+    User u2;
+
     @Before
-    public void setUp()
-    {
-    }
-    
-    @After
-    public void tearDown()
-    {
+    public void setUp() throws Exception {
+        us = new UserService();
+        
+        u1 = new User("Pieter Kegel", "nl", "pieter.nl", "ik ben Pieter!");
+        
+        u2 = new User("henk henkster", "nl", "-", "Hoi, ik ben henkster de prankster >:)");
+        us.save(u1);
+        us.save(u2);
     }
 
     @Test

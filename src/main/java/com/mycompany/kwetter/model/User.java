@@ -52,6 +52,14 @@ public class User
     	
     }
 
+    User(String name, String location, String web, String bio)
+    {
+        this.infoName = name;
+        this.infoLocation = location;
+        this.infoWeb = web;
+        this.infoBio = bio;
+    }
+
     public long getId()
     {
         return id;
